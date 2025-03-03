@@ -12,20 +12,15 @@
     speedometer.style.zIndex = '1000';
     speedometer.innerHTML = `
         <div class="flex items-center relative z-20">
-            <!-- Gear Box Section -->
             <div class="flex items-center justify-center bg-gray-800 bg-opacity-75 p-2 rounded-md mr-2 text-center" style="background-color: rgb(51, 51, 51); width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 3px;">
                 <div class="text-lg font-bold direction text-white" style="line-height: 1;">N</div>
             </div>
-
-            <!-- Speedometer Section -->
             <div class="flex flex-col items-center mr-auto relative">
                 <div class="flex items-baseline font-bold text-3xl speed" >
                     <span class="text-5xl speed-value" style="font-weight: 300; margin-left: 15px;">000</span>
-                    <span class="text-3xl speed-unit ml-1 mt-1" style="font-weight: 300;">KM/H</span> <!-- Ändrat till font-weight: 300 för tunnare text -->
+                    <span class="text-3xl speed-unit ml-1 mt-1" style="font-weight: 300;">KM/H</span> 
                 </div>
             </div>
-
-            <!-- Fuel Gauge Section -->
             <div class="flex flex-col items-center mr-auto" style="transform: translateY(-20px);"> 
                 <i class="mdi mdi-fuel text-xl text-white"></i>
                 <div class="w-2 h-12 bg-gray-700 mt-2 rounded-lg overflow-hidden relative" style="background-color: rgb(51, 51, 51);">
@@ -33,9 +28,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- The actual speed line that goes under all elements -->
-        <div class="absolute bottom-0 w-5/6 h-2 z-0" style="background-color:rgb(51, 51, 51); margin-top: -5px;"> <!-- Justerat för att gå under alla element -->
+        <div class="absolute bottom-0 w-5/6 h-2 z-0" style="background-color:rgb(51, 51, 51); margin-top: -5px;">
             <div class="speed-fill h-full bg-white transition-width duration-100" style="width: 0%; border-radius: 2px;"></div>
         </div>
     `;
