@@ -41,7 +41,6 @@
             direction.textContent = gear;
 
             const speedPercentage = Math.min((speed / 300) * 100, 100);
-            // Uppdaterar det faktiska speed-fill elementet
             speedFill.style.width = `${speedPercentage}%`;
 
             const fuelPercentage = Math.min(Math.max(fuel, 0), 100);
